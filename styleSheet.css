@@ -1,0 +1,153 @@
+*{
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Arial", sans-serif;
+    margin: 0px;
+    padding: 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    
+}
+.reset{
+    width: 80px;
+    height: 80px;
+}
+.players{
+     border: 2px solid blue;
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     border-radius: 15px;
+     font-size: 24px;
+     max-width: 300px;
+     margin-top: 30px;
+}
+.players div{
+    padding:  15px 25px;
+    border-radius: 15px;
+    border: 2px solid white;
+    
+}
+.players div.active{
+    background-color: blue;
+    color: white;
+}
+.main{
+    display: grid;
+    grid-template-columns: repeat(3,auto);
+    margin-top: 40px;
+
+}
+    
+.cell{
+    border: 2px solid blue;
+    width: 100px;
+    height: 100px;
+    font-size: 70px;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+.cell:nth-child(1),.cell:nth-child(2),.cell:nth-child(3){
+    
+    border-top: none;
+ }   
+ .cell:nth-child(1),.cell:nth-child(4),.cell:nth-child(7){
+    
+    border-left: none;
+ }  
+ .cell:nth-child(3),.cell:nth-child(6),.cell:nth-child(9){
+    
+    border-right: none;
+ }  
+ .cell:nth-child(7),.cell:nth-child(8),.cell:nth-child(9){
+    
+    border-bottom: none;
+ }  
+.disabled{
+    pointer-events: none;
+}
+
+/* 
+ let player1Symbol = "X";
+
+let player2symbol= "0";
+
+let gameFinish= false;
+
+for (let i = 1; i <= 9; i++) {
+    document.getElementById(i.toString()).addEventListener(
+    "click", 
+    function() {
+    
+    }
+    );
+    } */
+
+    /* if (this.innerHTML === "" && !gameFinish) {
+        this.innerHTML = player1Symbol;
+        }
+function round(){
+    document.getElementById("round").style.backgroundColor = "green";
+    document.getElementById("box_9").style.backgroundColor = "pink";
+    
+}
+
+
+function cross(){
+    document.getElementById("rounds").style.backgroundColor = "red";
+    document.getElementById("box_2").style.backgroundColor  = "red";
+}
+
+function reset(){
+    document.getElementById("rounde").style.backgroundColor = "pink";
+}
+
+function img(){
+    document.getElementById("box_1").src="icons8-0-percent-30.png";
+}
+
+document.getElementById("reset").addEventListener(
+    "click", 
+    function reset() {
+
+    }
+    ); */
+
+    
+     
+     
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+ /* <div style="display: block;padding: 15px;">
+ <button class="reset" id="round" onclick="round()"><img src="icons8-0-percent-30.png" alt="" class="reset" id="round"></button><br><br>
+ <button class="reset" id="cancle" onclick="cross()"><img src="icons8-close-30.png" alt="" class="reset" id="rounds"></button><br><br>
+ <button class="reset" id="reset-game" onclick="reset()"><img src="circular.png" alt="" class="reset" id="rounde"></button>
+ </div>
+    
+     */
+   
